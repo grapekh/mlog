@@ -11,13 +11,13 @@ You can call this with or without a log file - if a log file is specified:
 By default, the log will be rolled over to a backup file when its size reaches 10Mb and 10 such files will be created (and eventually reused).
 Alternatively, you can specify the max size of the log file before it gets rotated, and the number of backup files you want to create, with the StartEx function.
 
-Some example calls to this pagage: 
-
+## Some example calls to this package: 
+```
 You can decide what to log when calling mlog.Start
-  a) LevelTrace logs:   everything
-  b) LevelInfo  logs:   info, Warnings and Errors
-  c) LevelWarn  logs:   Warning and Errors
-  d) LevelError logs:   just Errors
+	- LevelTrace logs:   everything
+	- LevelInfo  logs:   info, Warnings and Errors
+	- LevelWarn  logs:   Warning and Errors
+	- LevelError logs:   just Errors
 
  Example for startx - Write everything to console and don't write to a file.
  mlog.Start(mlog.LevelInfo, "")
@@ -53,3 +53,4 @@ You can decide what to log when calling mlog.Start
 
  Fatal - display the message and STOP execution!
    	mlog.Fatal("Testing fatal error message.  This should hault the program!!")
+```
