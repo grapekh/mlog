@@ -1,5 +1,6 @@
 # mlog
 A GO Logging Wrapper - writes to file and console
+
 log is simple logging module for go, Provide a standard interface for output to the screen and a logfile. 
 It includes a rotating file feature and console logging.
 The message in the log file will be prepended with the severity and also the standard LOG time/date stamp and of course, the message
