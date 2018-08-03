@@ -1,4 +1,4 @@
-# higlog
+# mlog
 A GO Logging Wrapper - writes to file and console
 
 log is simple logging module for go, Provide a standard interface for output to the screen and a logfile. 
